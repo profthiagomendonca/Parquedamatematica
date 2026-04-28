@@ -1,0 +1,166 @@
+[gd_scene format=3 uid="uid://bacoufcfkhn06"]
+
+[ext_resource type="Texture2D" uid="uid://b7n0y0pbeyt4t" path="res://assets/fundo_carrossel.png" id="1_fundo"]
+[ext_resource type="AudioStream" uid="uid://bar5xs7nlpiq0" path="res://Jogo 6.mp3" id="2_som"]
+[ext_resource type="Script" uid="uid://dlx1oklqpkxuh" path="res://scripts/CarrosselManager.gd" id="3_script"]
+
+[node name="Carrossel" type="Node2D" unique_id=411939094]
+script = ExtResource("3_script")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=1605797142]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer" unique_id=1752567216]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fundo")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=442522620]
+stream = ExtResource("2_som")
+volume_db = -12.0
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=311584851]
+
+[node name="InstructionLabel" type="Label" parent="UI" unique_id=1834167358]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 40.0
+offset_right = 400.0
+offset_bottom = 120.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "Ache a conta que dá:"
+horizontal_alignment = 1
+
+[node name="TargetNumber" type="Label" parent="UI" unique_id=156118325]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 110.0
+offset_right = 100.0
+offset_bottom = 210.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 72
+text = "24"
+horizontal_alignment = 1
+
+[node name="Cavalo1" type="Button" parent="UI" unique_id=1715232972]
+offset_left = 207.0
+offset_top = 354.0
+offset_right = 327.0
+offset_bottom = 434.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.1, 0.1, 0.1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 36
+text = "3 x 8"
+flat = true
+
+[node name="Cavalo2" type="Button" parent="UI" unique_id=1328339383]
+offset_left = 393.0
+offset_top = 352.0
+offset_right = 513.0
+offset_bottom = 432.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.1, 0.1, 0.1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 36
+text = "4 x 6"
+flat = true
+
+[node name="Cavalo3" type="Button" parent="UI" unique_id=1930722373]
+offset_left = 572.0
+offset_top = 357.0
+offset_right = 692.0
+offset_bottom = 437.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.1, 0.1, 0.1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 36
+text = "12 ÷ 2"
+flat = true
+
+[node name="Cavalo4" type="Button" parent="UI" unique_id=1056861076]
+offset_left = 778.0
+offset_top = 349.0
+offset_right = 898.0
+offset_bottom = 429.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.1, 0.1, 0.1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 36
+text = "5 x 5"
+flat = true
+
+[node name="Cavalo5" type="Button" parent="UI" unique_id=1088065210]
+offset_left = 967.9999
+offset_top = 349.00003
+offset_right = 1088.0
+offset_bottom = 429.00003
+rotation = 0.15634568
+scale = Vector2(0.8873605, 0.8634032)
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.1, 0.1, 0.1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 36
+text = "2 x 10"
+flat = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=1118342419]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -80.0
+offset_right = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/HBoxContainer" unique_id=174384347]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="BackButton" type="Button" parent="UI/HBoxContainer/MarginContainer" unique_id=1931127334]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "  ⬅️ Voltar ao Parque  "
+
+[node name="Spacer" type="Control" parent="UI/HBoxContainer" unique_id=576170654]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScoreLabel" type="Label" parent="UI/HBoxContainer" unique_id=1319047574]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.9, 0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 38
+text = "Acertos: 0"
+horizontal_alignment = 2
+vertical_alignment = 1

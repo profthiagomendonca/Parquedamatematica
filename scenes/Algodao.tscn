@@ -1,0 +1,213 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/AlgodaoManager.gd" id="1_mgr"]
+[ext_resource type="Texture2D" path="res://assets/fundo_algodao.png" id="2_bg"]
+[ext_resource type="AudioStream" path="res://Jogo 3.mp3" id="3_som"]
+[ext_resource type="Texture2D" path="res://assets/confete.png" id="4_confete"]
+[ext_resource type="Texture2D" path="res://assets/estrela_vazia.png" id="5_vazia"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mockup"]
+bg_color = Color(1, 1, 1, 0.627451)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.235294)
+shadow_size = 8
+
+[node name="Algodao" type="Node2D"]
+script = ExtResource("1_mgr")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="ConfettiParticles" type="CPUParticles2D" parent="BackgroundLayer"]
+position = Vector2(640, -50)
+emitting = false
+amount = 40
+one_shot = true
+explosiveness = 0.8
+texture = ExtResource("4_confete")
+emission_shape = 3
+emission_rect_extents = Vector2(640, 1)
+direction = Vector2(0, 1)
+spread = 15.0
+initial_velocity_min = 200.0
+initial_velocity_max = 500.0
+angular_velocity_min = -180.0
+angular_velocity_max = 180.0
+scale_amount_min = 0.5
+scale_amount_max = 1.2
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_som")
+autoplay = true
+volume_db = -12.0
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="GameCenter" type="Control" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ReferencePanel" type="PanelContainer" parent="UI/GameCenter"]
+custom_minimum_size = Vector2(900, 120)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -450.0
+offset_top = 260.0
+offset_right = 450.0
+offset_bottom = 380.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mockup")
+
+[node name="VBox" type="VBoxContainer" parent="UI/GameCenter/ReferencePanel"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="InstructionLabel" type="Label" parent="UI/GameCenter/ReferencePanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "Complete a sequência"
+horizontal_alignment = 1
+
+[node name="ReferenceRow" type="HBoxContainer" parent="UI/GameCenter/ReferencePanel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="WorkspaceRow" type="HBoxContainer" parent="UI/GameCenter"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -450.0
+offset_top = -250.0
+offset_right = 450.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="SideOptionsPanel" type="PanelContainer" parent="UI"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -200.0
+offset_right = -30.0
+offset_bottom = 200.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mockup")
+
+[node name="VBox" type="VBoxContainer" parent="UI/SideOptionsPanel"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/SideOptionsPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "OPÇÕES"
+horizontal_alignment = 1
+
+[node name="OptionsContainer" type="VBoxContainer" parent="UI/SideOptionsPanel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="HUD" type="MarginContainer" parent="UI"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -380.0
+offset_top = -100.0
+offset_right = -40.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="StarsContainer" type="HBoxContainer" parent="UI/HUD"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+alignment = 2
+
+[node name="Star1" type="TextureRect" parent="UI/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star2" type="TextureRect" parent="UI/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star3" type="TextureRect" parent="UI/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star4" type="TextureRect" parent="UI/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star5" type="TextureRect" parent="UI/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Footer" type="MarginContainer" parent="UI"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 20
+
+[node name="FooterHBox" type="HBoxContainer" parent="UI/Footer"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="UI/Footer/FooterHBox"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "  ⬅️ Voltar ao Parque  "

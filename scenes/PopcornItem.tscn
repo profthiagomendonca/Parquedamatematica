@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/PopcornItem.gd" id="1_item"]
+
+[node name="PopcornItem" type="Node2D" groups=["popcorn_item"]]
+script = ExtResource("1_item")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)

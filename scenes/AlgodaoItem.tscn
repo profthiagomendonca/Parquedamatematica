@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Shader" path="res://shaders/remove_white.gdshader" id="1_shader"]
+
+[sub_resource type="GDScript" id="GDScript_item"]
+script/source = "extends MarginContainer
+
+@onready var texture_rect = $TextureRect
+var type_id: int = 0
+var current_angle: int = 0
+
+func setup(tex: Texture2D, id: int, target_angle: int = 0, is_hidden: bool = false):
+	if not is_node_ready(): await ready
+	
+	if tex:
+		texture_rect.texture = tex
+		texture_rect.modulate = Color.WHITE
+		texture_rect.rotation_degrees = target_angle
+	else:
+		texture_rect.texture = null
+		
+	type_id = id
+	current_angle = target_angle
+	
+	if custom_minimum_size != Vector2.ZERO:
+		texture_rect.pivot_offset = custom_minimum_size / 2
+		
+	# Animação inicial segura
+	if is_hidden:
+		texture_rect.scale = Vector2.ZERO
+		texture_rect.modulate = Color.TRANSPARENT
+	else:
+		texture_rect.scale = Vector2.ONE
+		texture_rect.modulate = Color.WHITE
+		var tween = create_tween().set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
+		tween.tween_property(texture_rect, \"scale\", Vector2.ONE, 0.5)
+
+func reveal_anim():
+	texture_rect.scale = Vector2.ZERO
+	if custom_minimum_size != Vector2.ZERO:
+		texture_rect.pivot_offset = custom_minimum_size / 2
+	texture_rect.modulate = Color.WHITE
+	var tween = create_tween().set_trans(Tween.TRANS_ELASTIC).set_ease(Tween.EASE_OUT)
+	tween.tween_property(texture_rect, \"scale\", Vector2.ONE, 0.5)
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_alg"]
+shader = ExtResource("1_shader")
+shader_parameter/threshold = 0.95
+
+[node name="AlgodaoItem" type="MarginContainer"]
+custom_minimum_size = Vector2(100, 120)
+offset_right = 100.0
+offset_bottom = 120.0
+pivot_offset = Vector2(50, 60)
+script = SubResource("GDScript_item")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_alg")
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5

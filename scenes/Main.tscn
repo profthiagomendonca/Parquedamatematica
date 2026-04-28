@@ -1,0 +1,130 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/LevelManager.gd" id="1_abcde"]
+[ext_resource type="PackedScene" path="res://scenes/Cup.tscn" id="2_cup"]
+[ext_resource type="PackedScene" path="res://scenes/SnapPoint.tscn" id="3_snap"]
+[ext_resource type="Texture2D" path="res://Barraca de copos.png" id="bg_img"]
+[ext_resource type="Texture2D" path="res://assets/estrela_viva.png" id="4_viva"]
+[ext_resource type="Texture2D" path="res://assets/estrela_vazia.png" id="5_vazia"]
+[ext_resource type="Texture2D" path="res://assets/confete.png" id="6_confete"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_abcde")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("bg_img")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ConfettiParticles" type="CPUParticles2D" parent="BackgroundLayer"]
+position = Vector2(640, -50)
+emitting = false
+amount = 40
+one_shot = true
+explosiveness = 0.8
+texture = ExtResource("6_confete")
+emission_shape = 3
+emission_rect_extents = Vector2(640, 1)
+direction = Vector2(0, 1)
+spread = 15.0
+initial_velocity_min = 200.0
+initial_velocity_max = 500.0
+angular_velocity_min = -180.0
+angular_velocity_max = 180.0
+scale_amount_min = 0.5
+scale_amount_max = 1.2
+color = Color(1, 1, 1, 1)
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Control" type="Control" parent="UI/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="FooterMargin" type="MarginContainer" parent="UI/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 20
+
+[node name="FooterHBox" type="HBoxContainer" parent="UI/VBoxContainer/FooterMargin"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="UI/VBoxContainer/FooterMargin/FooterHBox"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "  ⬅️ Voltar ao Parque  "
+
+[node name="Spacer" type="Control" parent="UI/VBoxContainer/FooterMargin/FooterHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="HUD" type="HBoxContainer" parent="UI/VBoxContainer/FooterMargin/FooterHBox"]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 2
+
+[node name="LabelStatus" type="Label" parent="UI/VBoxContainer/FooterMargin/FooterHBox/HUD"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 48
+text = "Resolva: 5 + 5 = ?"
+horizontal_alignment = 1
+
+[node name="StarsContainer" type="HBoxContainer" parent="UI/VBoxContainer/FooterMargin/FooterHBox/HUD"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+alignment = 1
+
+[node name="Star1" type="TextureRect" parent="UI/VBoxContainer/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star2" type="TextureRect" parent="UI/VBoxContainer/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star3" type="TextureRect" parent="UI/VBoxContainer/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star4" type="TextureRect" parent="UI/VBoxContainer/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star5" type="TextureRect" parent="UI/VBoxContainer/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+

@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://dphskxsct28bw"]
+
+[ext_resource type="Texture2D" uid="uid://bos6me75l05f2" path="res://assets/Fundo_tangram.png" id="1_fundo"]
+[ext_resource type="AudioStream" uid="uid://r6ompv6odf3p" path="res://jogo 9.mp3" id="2_som"]
+[ext_resource type="Script" uid="uid://b7c52yql2idd7" path="res://scripts/TangramManager.gd" id="3_script"]
+
+[node name="Tangram" type="Node2D" unique_id=1662696601]
+script = ExtResource("3_script")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=1941401271]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer" unique_id=1692141448]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fundo")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=1569948068]
+stream = ExtResource("2_som")
+volume_db = -12.0
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1563779755]
+
+[node name="InstructionLabel" type="Label" parent="UI" unique_id=1119102861]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 580.0
+offset_right = 400.0
+offset_bottom = 600.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 38
+text = "Vamos montar!"
+horizontal_alignment = 1
+
+[node name="StarsContainer" type="Control" parent="UI" unique_id=305632522]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -150.0
+offset_top = 30.0
+offset_right = -10.0
+offset_bottom = 360.0
+grow_horizontal = 0
+
+[node name="Star1" type="TextureRect" parent="UI/StarsContainer" unique_id=947763947]
+custom_minimum_size = Vector2(115, 115)
+layout_mode = 0
+offset_right = 115.0
+offset_bottom = 115.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Star2" type="TextureRect" parent="UI/StarsContainer" unique_id=1123043851]
+custom_minimum_size = Vector2(115, 115)
+layout_mode = 0
+offset_top = 180.0
+offset_right = 115.0
+offset_bottom = 295.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Star3" type="TextureRect" parent="UI/StarsContainer" unique_id=1519995832]
+custom_minimum_size = Vector2(115, 115)
+layout_mode = 0
+offset_top = 360.0
+offset_right = 115.0
+offset_bottom = 475.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=1416973523]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -80.0
+offset_right = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="BackButton" type="Button" parent="UI/HBoxContainer" unique_id=998238856]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "  ⬅️ Voltar ao Parque  "
+
+[node name="Spacer" type="Control" parent="UI/HBoxContainer" unique_id=86465938]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScoreLabel" type="Label" parent="UI/HBoxContainer" unique_id=1650195842]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.9, 0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 38
+text = "Puzzles: 0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="OptionsContainer" type="HBoxContainer" parent="UI" unique_id=823208171]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -280.0
+offset_right = 400.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Anchors" type="Node2D" parent="." unique_id=856360619]
+
+[node name="AreaDaMesa" type="Polygon2D" parent="Anchors" unique_id=197554227]
+color = Color(0.2, 1, 0.2, 0.3)
+polygon = PackedVector2Array(365, 453, 824, 456, 918, 553, 261, 552)
+
+[node name="CentroDaSombra" type="ColorRect" parent="Anchors" unique_id=1061934510]
+offset_left = 586.0
+offset_top = 315.0
+offset_right = 596.0
+offset_bottom = 325.0
+color = Color(1, 0, 0, 1)
+
+[node name="CentroDoGabarito" type="ColorRect" parent="Anchors" unique_id=755843434]
+visible = false
+offset_left = 1130.0
+offset_top = 240.0
+offset_right = 1140.0
+offset_bottom = 250.0
+color = Color(1, 1, 0, 1)
+
+[node name="Slot1" type="ColorRect" parent="Anchors" unique_id=1222790011]
+offset_left = 401.0
+offset_top = 496.0
+offset_right = 411.0
+offset_bottom = 506.0
+color = Color(1, 1, 0, 1)
+
+[node name="Slot2" type="ColorRect" parent="Anchors" unique_id=1934814074]
+offset_left = 574.0
+offset_top = 495.0
+offset_right = 584.0
+offset_bottom = 505.0
+color = Color(1, 1, 0, 1)
+
+[node name="Slot3" type="ColorRect" parent="Anchors" unique_id=1635589478]
+offset_left = 758.0
+offset_top = 495.0
+offset_right = 768.0
+offset_bottom = 505.0
+color = Color(1, 1, 0, 1)
+
+[node name="PiecesContainer" type="Node2D" parent="." unique_id=2065583649]

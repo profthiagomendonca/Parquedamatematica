@@ -1,0 +1,153 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/fundo_magica.png" id="1_fundo"]
+[ext_resource type="AudioStream" path="res://Jogo 4.mp3" id="2_som"]
+
+[ext_resource type="Script" path="res://scripts/MagicaManager.gd" id="3_script"]
+
+[node name="Magica" type="Node2D"]
+script = ExtResource("3_script")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fundo")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="ConfettiParticles" type="CPUParticles2D" parent="BackgroundLayer"]
+position = Vector2(640, -50)
+emitting = false
+amount = 150
+lifetime = 3.0
+one_shot = true
+explosiveness = 0.8
+emission_shape = 3
+emission_rect_extents = Vector2(640, 1)
+direction = Vector2(0, 1)
+spread = 30.0
+gravity = Vector2(0, 300)
+initial_velocity_min = 100.0
+initial_velocity_max = 300.0
+angular_velocity_min = -180.0
+angular_velocity_max = 180.0
+scale_amount_min = 15.0
+scale_amount_max = 25.0
+color = Color(1, 0.8, 0.2, 1)
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_som")
+volume_db = -12.0
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Posicao1" type="ColorRect" parent="UI"]
+offset_left = 300.0
+offset_top = 400.0
+offset_right = 340.0
+offset_bottom = 440.0
+color = Color(1, 0, 0, 0.5)
+
+[node name="Posicao2" type="ColorRect" parent="UI"]
+offset_left = 450.0
+offset_top = 400.0
+offset_right = 490.0
+offset_bottom = 440.0
+color = Color(1, 0, 0, 0.5)
+
+[node name="Posicao3" type="ColorRect" parent="UI"]
+offset_left = 600.0
+offset_top = 400.0
+offset_right = 640.0
+offset_bottom = 440.0
+color = Color(1, 0, 0, 0.5)
+
+[node name="Posicao4" type="ColorRect" parent="UI"]
+offset_left = 750.0
+offset_top = 400.0
+offset_right = 790.0
+offset_bottom = 440.0
+color = Color(1, 0, 0, 0.5)
+
+[node name="Posicao5" type="ColorRect" parent="UI"]
+offset_left = 900.0
+offset_top = 400.0
+offset_right = 940.0
+offset_bottom = 440.0
+color = Color(1, 0, 0, 0.5)
+
+[node name="InstructionLabel" type="Label" parent="UI"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -380.0
+offset_top = -140.0
+offset_right = 380.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "Preste atenção..."
+horizontal_alignment = 1
+
+[node name="ItensCartolaContainer" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -80.0
+offset_right = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="BackButton" type="Button" parent="UI/HBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "  ⬅️ Voltar ao Parque  "
+
+[node name="Spacer" type="Control" parent="UI/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScoreLabel" type="Label" parent="UI/HBoxContainer"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.9, 0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 38
+text = "Acertos: 0"
+horizontal_alignment = 2
+vertical_alignment = 1

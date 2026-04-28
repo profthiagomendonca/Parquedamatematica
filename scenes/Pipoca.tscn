@@ -1,0 +1,216 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/PopcornManager.gd" id="1_mgr"]
+[ext_resource type="Texture2D" path="res://assets/fundo_pipoca.png" id="2_bg"]
+[ext_resource type="Texture2D" path="res://assets/confete.png" id="4_confete"]
+[ext_resource type="Texture2D" path="res://assets/estrela_vazia.png" id="5_vazia"]
+[ext_resource type="Texture2D" path="res://assets/estrela_viva.png" id="6_viva"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_top"]
+bg_color = Color(0, 0, 0, 0.470588)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn"]
+bg_color = Color(0.9, 0.4, 0.1, 0.9)
+border_width_bottom = 6
+border_color = Color(0.6, 0.2, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Pipoca" type="Node2D"]
+script = ExtResource("1_mgr")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="ConfettiParticles" type="CPUParticles2D" parent="BackgroundLayer"]
+position = Vector2(640, -50)
+emitting = false
+amount = 40
+one_shot = true
+explosiveness = 0.8
+texture = ExtResource("4_confete")
+emission_shape = 3
+emission_rect_extents = Vector2(640, 1)
+direction = Vector2(0, 1)
+spread = 15.0
+initial_velocity_min = 200.0
+initial_velocity_max = 500.0
+angular_velocity_min = -180.0
+angular_velocity_max = 180.0
+scale_amount_min = 0.5
+scale_amount_max = 1.2
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[node name="ItemsContainer" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+	[node name="TopArea" type="MarginContainer" parent="UI"]
+	anchors_preset = 0
+	offset_left = 40.0
+	offset_top = 40.0
+	offset_right = 450.0
+	offset_bottom = 180.0
+
+	[node name="Panel" type="PanelContainer" parent="UI/TopArea"]
+	layout_mode = 2
+	theme_override_styles/panel = SubResource("StyleBoxFlat_top")
+
+	[node name="Margin" type="MarginContainer" parent="UI/TopArea/Panel"]
+	layout_mode = 2
+	theme_override_constants/margin_left = 30
+	theme_override_constants/margin_top = 15
+	theme_override_constants/margin_right = 30
+	theme_override_constants/margin_bottom = 15
+
+	[node name="VBox" type="VBoxContainer" parent="UI/TopArea/Panel/Margin"]
+	layout_mode = 2
+	theme_override_constants/separation = 5
+
+	[node name="LabelTarget" type="Label" parent="UI/TopArea/Panel/Margin/VBox"]
+	layout_mode = 2
+	theme_override_font_sizes/font_size = 42
+	text = "Pedido: 00 pipocas"
+	horizontal_alignment = 1
+
+	[node name="LabelCurrent" type="Label" parent="UI/TopArea/Panel/Margin/VBox"]
+	layout_mode = 2
+	theme_override_colors/font_color = Color(1, 0.941176, 0.470588, 1)
+	theme_override_font_sizes/font_size = 26
+	text = "Na bancada: 0"
+	horizontal_alignment = 1
+
+
+[node name="SideButtons" type="MarginContainer" parent="UI"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -250.0
+offset_right = -30.0
+offset_bottom = 250.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="UI/SideButtons"]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="Add10" type="Button" parent="UI/SideButtons/VBox"]
+custom_minimum_size = Vector2(0, 85)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "+ 10 (Grande)"
+
+[node name="Add5" type="Button" parent="UI/SideButtons/VBox"]
+custom_minimum_size = Vector2(0, 85)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "+ 5 (Médio)"
+
+[node name="Add1" type="Button" parent="UI/SideButtons/VBox"]
+custom_minimum_size = Vector2(0, 85)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "+ 1 (Pequeno)"
+
+[node name="Spacer" type="Control" parent="UI/SideButtons/VBox"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Undo" type="Button" parent="UI/SideButtons/VBox"]
+custom_minimum_size = Vector2(0, 85)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "Desfazer"
+
+[node name="FooterMargin" type="MarginContainer" parent="UI"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 20
+
+[node name="FooterHBox" type="HBoxContainer" parent="UI/FooterMargin"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="UI/FooterMargin/FooterHBox"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "  ⬅️ Voltar ao Parque  "
+
+[node name="Spacer" type="Control" parent="UI/FooterMargin/FooterHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="HUD" type="HBoxContainer" parent="UI/FooterMargin/FooterHBox"]
+layout_mode = 2
+alignment = 2
+
+[node name="StarsContainer" type="HBoxContainer" parent="UI/FooterMargin/FooterHBox/HUD"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+alignment = 1
+
+[node name="Star1" type="TextureRect" parent="UI/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star2" type="TextureRect" parent="UI/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star3" type="TextureRect" parent="UI/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star4" type="TextureRect" parent="UI/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Star5" type="TextureRect" parent="UI/FooterMargin/FooterHBox/HUD/StarsContainer"]
+layout_mode = 2
+texture = ExtResource("5_vazia")
+expand_mode = 2
+stretch_mode = 5

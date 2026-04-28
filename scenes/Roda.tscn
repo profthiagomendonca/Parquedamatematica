@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://cahdahcehdsty"]
+
+[ext_resource type="Texture2D" uid="uid://cdtcjd1cb44xh" path="res://assets/fundo_roda.png" id="1_fundo"]
+[ext_resource type="Script" uid="uid://c4qtsef7gdya0" path="res://scripts/RodaManager.gd" id="2_script"]
+[ext_resource type="AudioStream" uid="uid://54px10hnpjt8" path="res://Jogo 5.mp3" id="2_som"]
+[ext_resource type="Texture2D" uid="uid://btdoevbnalcai" path="res://assets/Ponteiro_amarelo_hora.png" id="4_hora"]
+[ext_resource type="Texture2D" uid="uid://drldblaj0c17y" path="res://assets/Ponteiro_vermelho_minuto.png" id="5_min"]
+
+[node name="Roda" type="Node2D" unique_id=1775714886]
+script = ExtResource("2_script")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=2077174800]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer" unique_id=267576954]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fundo")
+expand_mode = 1
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=1064481723]
+stream = ExtResource("2_som")
+volume_db = -12.0
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=462494018]
+
+[node name="CentroDaRoda" type="ColorRect" parent="UI" unique_id=1823550521]
+offset_left = 639.0
+offset_top = 277.0
+offset_right = 659.0
+offset_bottom = 297.0
+color = Color(1, 0, 0, 0.5)
+
+[node name="Cabine1" type="Button" parent="UI" unique_id=1204020007]
+offset_left = 704.0
+offset_top = 83.0
+offset_right = 784.0
+offset_bottom = 163.0
+text = "1"
+
+[node name="Cabine2" type="Button" parent="UI" unique_id=1805766202]
+offset_left = 789.0
+offset_top = 154.0
+offset_right = 869.0
+offset_bottom = 234.0
+text = "2"
+
+[node name="Cabine3" type="Button" parent="UI" unique_id=1503965015]
+offset_left = 817.0
+offset_top = 250.0
+offset_right = 897.0
+offset_bottom = 330.0
+text = "3"
+
+[node name="Cabine4" type="Button" parent="UI" unique_id=1725776800]
+offset_left = 797.0
+offset_top = 347.0
+offset_right = 877.0
+offset_bottom = 427.0
+text = "4"
+
+[node name="Cabine5" type="Button" parent="UI" unique_id=922353763]
+offset_left = 742.0
+offset_top = 426.0
+offset_right = 822.0
+offset_bottom = 506.0
+text = "5"
+
+[node name="Cabine6" type="Button" parent="UI" unique_id=1718802401]
+offset_left = 600.0
+offset_top = 467.0
+offset_right = 680.0
+offset_bottom = 547.0
+text = "6"
+
+[node name="Cabine7" type="Button" parent="UI" unique_id=455470553]
+offset_left = 457.0
+offset_top = 427.0
+offset_right = 537.0
+offset_bottom = 507.0
+text = "7"
+
+[node name="Cabine8" type="Button" parent="UI" unique_id=971633789]
+offset_left = 399.0
+offset_top = 349.0
+offset_right = 479.0
+offset_bottom = 429.0
+text = "8"
+
+[node name="Cabine9" type="Button" parent="UI" unique_id=259340325]
+offset_left = 378.0
+offset_top = 251.0
+offset_right = 458.0
+offset_bottom = 331.0
+text = "9"
+
+[node name="Cabine10" type="Button" parent="UI" unique_id=584571984]
+offset_left = 410.0
+offset_top = 149.0
+offset_right = 490.0
+offset_bottom = 229.0
+text = "10"
+
+[node name="Cabine11" type="Button" parent="UI" unique_id=305285493]
+offset_left = 491.0
+offset_top = 81.0
+offset_right = 571.0
+offset_bottom = 161.0
+text = "11"
+
+[node name="Cabine12" type="Button" parent="UI" unique_id=248442328]
+offset_left = 600.0
+offset_top = 55.0
+offset_right = 680.0
+offset_bottom = 135.0
+text = "12"
+
+[node name="InstructionLabel" type="Button" parent="UI" unique_id=123456781]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -278.0
+offset_top = -80.0
+offset_right = 482.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=1093215582]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -80.0
+offset_right = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/HBoxContainer" unique_id=1952547666]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="BackButton" type="Button" parent="UI/HBoxContainer/MarginContainer" unique_id=79682211]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "  ⬅️ Voltar ao Parque  "
+
+[node name="Spacer" type="Control" parent="UI/HBoxContainer" unique_id=123456780]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScoreLabel" type="Button" parent="UI/HBoxContainer" unique_id=123456782]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.2, 1)
+theme_override_font_sizes/font_size = 34
+
+[node name="PonteiroHora" type="Sprite2D" parent="." unique_id=2009875483]
+unique_name_in_owner = true
+position = Vector2(640, 287)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_hora")
+offset = Vector2(0, -180)
+
+[node name="PonteiroMin" type="Sprite2D" parent="." unique_id=1201939949]
+unique_name_in_owner = true
+position = Vector2(640, 301)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5_min")
+offset = Vector2(0, -220)
