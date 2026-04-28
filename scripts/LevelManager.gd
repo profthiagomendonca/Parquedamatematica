@@ -52,32 +52,19 @@ func clear_table() -> void:
 func start_new_level() -> void:
 	clear_table()
 	is_setup = true
-	is_subtraction = randf() > 0.5
+	is_subtraction = true # Fixado para subtração conforme pedido!
 	current_cups = 0
 	level_finished = false
 	
-	if is_subtraction:
-		# Dificuldade progressiva baseada no streak
-		var min_val = 4 + (streak * 2)
-		var max_val = 10 + (streak * 3)
-		num1 = randi_range(min_val, max_val) 
-		num2 = randi_range(2, num1 - 1)
-		target_cups = num1 - num2
-		
-		update_ui()
-		generate_pyramid(num1, true) 
-	else:
-		# Dificuldade progressiva para adição
-		var max_sum = 5 + (streak * 2)
-		num1 = randi_range(1, max_sum / 2 + 1)
-		num2 = randi_range(1, max_sum / 2 + 1) 
-		target_cups = num1 + num2
-		
-		update_ui()
-		generate_pyramid(target_cups, false)
-		# Agora spawnamos MAIS copos do que o necessário, como solicitado!
-		var extra_cups = randi_range(2, 4)
-		spawn_cups(target_cups + extra_cups)
+	# Dificuldade progressiva baseada no streak
+	var min_val = 4 + (streak * 2)
+	var max_val = 10 + (streak * 3)
+	num1 = randi_range(min_val, max_val) 
+	num2 = randi_range(2, num1 - 1)
+	target_cups = num1 - num2
+	
+	update_ui()
+	generate_pyramid(num1, true)
 		
 	is_setup = false
 	check_win_condition()
@@ -147,10 +134,7 @@ func spawn_cups(count: int) -> void:
 
 func update_ui() -> void:
 	if label_status != null:
-		if is_subtraction:
-			label_status.text = "Resolva: " + str(num1) + " - " + str(num2) + " = ?"
-		else:
-			label_status.text = "Resolva: " + str(num1) + " + " + str(num2) + " = ?"
+		label_status.text = "Resolva: " + str(num1) + " - " + str(num2) + " = ?"
 			
 	# Atualiza as estrelas visualmente
 	if stars_container:
@@ -181,10 +165,7 @@ func _on_cup_dropped_on_table(_cup_node: Node2D) -> void:
 func check_win_condition() -> void:
 	if current_cups == target_cups and not level_finished:
 		level_finished = true
-		if is_subtraction:
-			label_status.text = "VITÓRIA! ✨ " + str(num1) + " - " + str(num2) + " = " + str(target_cups) + "!"
-		else:
-			label_status.text = "VITÓRIA! ✨ " + str(num1) + " + " + str(num2) + " = " + str(target_cups) + "!"
+		label_status.text = "VITÓRIA! ✨ " + str(num1) + " - " + str(num2) + " = " + str(target_cups) + "!"
 		
 		streak += 1
 		update_ui() # Mostra a estrela nova imediatamente
