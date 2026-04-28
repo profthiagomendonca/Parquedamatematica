@@ -1,9 +1,9 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1777378219
+::res://::1777381554
 Acerto.mp3::AudioStreamMP3::549769138350365453::1776659495::1776659780::1::::<><><>0<>0<>80abf796d410c3d22c1d4d455810fd37<>res://.godot/imported/Acerto.mp3-5d75d2b427fd5135e7bb4930356ea357.mp3str::
 Barraca de copos.png::CompressedTexture2D::8073309398800739220::1776648672::1776650893::1::::<><><>0<>0<>1e5bc0196f44e6214b19e2feef6e6a11<>res://.godot/imported/Barraca de copos.png-22f0a5dcce287cf0eccb08ab4bea5076.ctex::
 Erro.mp3::AudioStreamMP3::6463422493000013010::1776659648::1776659780::1::::<><><>0<>0<>57f606d466645fba40c57c2bfa0d626b<>res://.godot/imported/Erro.mp3-489e0107e831841d2819ea72de5888d6.mp3str::
-export_presets.cfg::TextFile::-1::1777378155::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1777378324::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::4128673243208343548::1776645606::1776650892::1::::<><><>0<>0<>ee454c64ed6e317c0b69cbe318b6f04f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 Jogo 1.mp3::AudioStreamMP3::1034718661375784054::1776657800::1776659303::1::::<><><>0<>0<>26e8b4bc8fb51955ff8ef850a4c6e0d9<>res://.godot/imported/Jogo 1.mp3-6a17a7ed411d6b469766da62508d1f1e.mp3str::
 Jogo 2.mp3::AudioStreamMP3::682022123210635224::1776657803::1776659303::1::::<><><>0<>0<>bca699d449256e45aaaa643484e17d72<>res://.godot/imported/Jogo 2.mp3-e63228fec9ef8dfbdd93d3e2ad0867a9.mp3str::
@@ -15,11 +15,12 @@ Jogo 7.mp3::AudioStreamMP3::4217811139271170059::1776725095::1776725702::1::::<>
 Jogo 8.mp3::AudioStreamMP3::8240193627996086431::1776725107::1777127240::1::::<><><>0<>0<>dcdce6a129bde95c153a78c301dd134e<>res://.godot/imported/Jogo 8.mp3-f54222f76c84f5f65f231517b7a83123.mp3str::
 jogo 9.mp3::AudioStreamMP3::1258078341366469235::1777210402::1777210512::1::::<><><>0<>0<>3a9d382051b4c4cd9fa4285ce0a0c201<>res://.godot/imported/jogo 9.mp3-d868046bead476ffb07491472391ae10.mp3str::
 Mapa do jogo.png::CompressedTexture2D::7194171111391234678::1776647828::1776650893::1::::<><><>0<>0<>79a6981fec8cc653abab904fc476d16e<>res://.godot/imported/Mapa do jogo.png-311e8748228dd3532871feba867d04ff.ctex::
-node_2d.tscn::PackedScene::8607287080396808946::1777246455::0::1::::<><><>0<>0<><>::uid://m4yovbqs0h8g::::res://scripts/MapScreen.gd<>uid://d174eehf7omj6::::res://assets/pin_gps.png<>uid://daq57g4yv2sju::::res://Mapa do jogo.png
+node_2d.tscn::PackedScene::8607287080396808946::1777386960::0::1::::<><><>0<>0<><>::uid://m4yovbqs0h8g::::res://scripts/MapScreen.gd<>uid://d174eehf7omj6::::res://assets/pin_gps.png<>uid://daq57g4yv2sju::::res://Mapa do jogo.png
+README.md::TextFile::-1::1777381522::0::1::::<><><>0<>0<><>::
 Som abertura.mp3::AudioStreamMP3::3947478119755238520::1776658037::1776659303::1::::<><><>0<>0<>a28db66f91bbdd8e5bed039e3312c634<>res://.godot/imported/Som abertura.mp3-447a684c62b53dc627631ea9c679883e.mp3str::
 Som mapa.mp3::AudioStreamMP3::3312269848625034657::1776657838::1776659303::1::::<><><>0<>0<>25a3d099fb0e343cd7d23ed11ce2eb12<>res://.godot/imported/Som mapa.mp3-33b1d0eff5a5554c37b494ca31c24f25.mp3str::
 Tela inicial.png::CompressedTexture2D::4087556063549442965::1776646644::1776650893::1::::<><><>0<>0<>55b813d1d924a3834054114ab3423594<>res://.godot/imported/Tela inicial.png-86ad9d2255d52a49ca550d3a109cb453.ctex::
-::res://assets/::1777246454
+::res://assets/::1777387514
 Bexiga.png::CompressedTexture2D::3356016288753209788::1777242951::1777246454::1::::<><><>0<>0<>6af9fe00b8ce2790c727c5e61d0745ee<>res://.godot/imported/Bexiga.png-c7f4abd1b625774e7c7e71b377dbff9f.ctex::
 Cartola.png::CompressedTexture2D::8209068444840944280::1776995320::1776995758::1::::<><><>0<>0<>3b27c8c222240b18d25236e4739ea9e2<>res://.godot/imported/Cartola.png-327047405e42efa58d56e0340146c13d.ctex::
 Circulo.png::CompressedTexture2D::8603232790109428214::1777242954::1777246454::1::::<><><>0<>0<>7a1d6af0fb5f3cf7a5e9fd0f3d04e1b5<>res://.godot/imported/Circulo.png-efa792b2fb9cd091d7ae2f68d4836e01.ctex::
@@ -29,6 +30,8 @@ Copinho_azul.png::CompressedTexture2D::2039245060756743303::1776649849::17766508
 Copinho_laranja.png::CompressedTexture2D::4374121240161322046::1776649843::1776650892::1::::<><><>0<>0<>a008c04e7596cd89e4391f829415e432<>res://.godot/imported/Copinho_laranja.png-dfd83c81494d8e563116bd4da994c3f4.ctex::
 Copinho_vermelho.png::CompressedTexture2D::8697945884633265588::1776649846::1776650892::1::::<><><>0<>0<>98caedaec3ca2ce5267d0a8ea0ade58a<>res://.godot/imported/Copinho_vermelho.png-5afcf600b322685c367fc4ffb1381109.ctex::
 Coracao_algodao.png::CompressedTexture2D::5689107357405151326::1776818068::1776818433::1::::<><><>0<>0<>b868b528582f725788dedb95183cce62<>res://.godot/imported/Coracao_algodao.png-956d718073b69e3785ad5d1b54a6cc74.ctex::
+Decagono.png::CompressedTexture2D::7465796778126891494::1777385626::1777385123::1::::<><><>0<>0<>3885e70d49039a7db82342c3d70a7fb4<>res://.godot/imported/Decagono.png-6b0e2a78408dabd7ad2d0a2ef6a361f6.ctex::
+Eneagono.png::CompressedTexture2D::7189282842962634710::1777385630::1777385123::1::::<><><>0<>0<>b5d60dbf16d75ff136dc2a2d4581e00d<>res://.godot/imported/Eneagono.png-3aad37f8db74613d70c941e6a0bd4ea2.ctex::
 Estrela.png::CompressedTexture2D::4582864790146033586::1777242957::1777246454::1::::<><><>0<>0<>e9011eb4de42c221349e9903c3847304<>res://.godot/imported/Estrela.png-ce84cef033f94fb4ccc8dd5f5a0f30c4.ctex::
 Estrela_algodao.png::CompressedTexture2D::6861124160482369866::1776818076::1776818433::1::::<><><>0<>0<>a9dc8b5aa3938a747fe7b73061710786<>res://.godot/imported/Estrela_algodao.png-0201f509d0ee49101ac98e783cae4cde.ctex::
 estrela_vazia.png::CompressedTexture2D::3720586785428286849::1776696478::1776696725::1::::<><><>0<>0<>b1984bf19b8247e3a1ee873ccd9502fd<>res://.godot/imported/estrela_vazia.png-d23781f0bff70e992c6843437a7f7e8b.ctex::
@@ -43,8 +46,14 @@ fundo_pipoca.png::CompressedTexture2D::77855424898419844::1776699715::1776723951
 fundo_roda.png::CompressedTexture2D::5022768779586458561::1777128295::1777128415::1::::<><><>0<>0<>fe3539b45356692e891a0d1e26c8aa64<>res://.godot/imported/fundo_roda.png-58fd319fe2465ba546549ef65d2c2c59.ctex::
 Fundo_tangram.png::CompressedTexture2D::3408127211407171317::1777209547::1777209695::1::::<><><>0<>0<>e825ce07f57af61f8576e6090edab0f3<>res://.godot/imported/Fundo_tangram.png-a82153feb384dfbd694b72375094e6b5.ctex::
 Gato_algodao.png::CompressedTexture2D::3905235522784062423::1776818070::1776818433::1::::<><><>0<>0<>b2598f13be44900a9afe5a87baf8b0a5<>res://.godot/imported/Gato_algodao.png-7c5a77379f2df501f3cad852c60b4c4c.ctex::
+Heptagono.png::CompressedTexture2D::8231224982705069296::1777384390::1777385123::1::::<><><>0<>0<>125cef49d4e7b72f6e66b86a94274ea7<>res://.godot/imported/Heptagono.png-6ab604b8bc8145c4dd02ddc87edfecaa.ctex::
 Hexágono.png::CompressedTexture2D::6392515492317360121::1777242960::1777246454::1::::<><><>0<>0<>126e28c4935ca31a33db81cd9e9f7e9b<>res://.godot/imported/Hexágono.png-c1cfe3c2325fad27247f87398db86b68.ctex::
 Losango.png::CompressedTexture2D::4800845472456338218::1777242962::1777246454::1::::<><><>0<>0<>1ca2df36fee17d7342382dc2dff35773<>res://.godot/imported/Losango.png-166cf1400d5e03a62b842dd33ce8a961.ctex::
+Magico.png::CompressedTexture2D::5416485916265266612::1777387474::1777387591::1::::<><><>0<>0<>cf1fece2634f942c68f92642c9e5562c<>res://.godot/imported/Magico.png-8726e5ebc9d230a52bf8f9cc7217c08b.ctex::
+Octogono8.png::CompressedTexture2D::5057782599848431074::1777386036::1777386423::1::::<><><>0<>0<>845ce261bf58f100e08b89c742a8ab8e<>res://.godot/imported/Octogono8.png-1c5ef9138e8f85b594b82b854a09dd6a.ctex::
+Oval.png::CompressedTexture2D::749223817085940680::1777383717::1777384220::1::::<><><>0<>0<>9d93c3bbf98589446ec88ce3531dd96c<>res://.godot/imported/Oval.png-c546e2737cd6d9fe2a072b8bbe039d79.ctex::
+Paralelogramo.png::CompressedTexture2D::5914972275713393651::1777383720::1777384220::1::::<><><>0<>0<>33a4e3b2d1f322ca2f74979ccba4f8a4<>res://.godot/imported/Paralelogramo.png-7678ceb46f6b360cb56f449a86c43c61.ctex::
+Pentagono.png::CompressedTexture2D::857654368627478765::1777383726::1777384220::1::::<><><>0<>0<>f6886391102cda33dfbcce966f5c696e<>res://.godot/imported/Pentagono.png-cf8b13281c9715a01f40277a5a0426ca.ctex::
 pin_gps.png::CompressedTexture2D::9052000230941440849::1776690264::1776690700::1::::<><><>0<>0<>3fcdc98888668fddd70cac9d4bb2e1c1<>res://.godot/imported/pin_gps.png-392173ea1d741fe68e607dd607b29f3c.ctex::
 Pipoca_unidade.png::CompressedTexture2D::1366957808173397175::1776808717::1776809113::1::::<><><>0<>0<>ef0396591e08fa49e90bc13b7168e8a5<>res://.godot/imported/Pipoca_unidade.png-de50c4a085c328898e47c5a3a2182f9b.ctex::
 Ponteiro_amarelo_hora.png::CompressedTexture2D::3727060132278498376::1777156779::1777156821::1::::<><><>0<>0<>101b66718e63caed550b5bbc02431637<>res://.godot/imported/Ponteiro_amarelo_hora.png-a4b7f7c63cd522b91060e3063ec7dd0a.ctex::
@@ -52,6 +61,8 @@ Ponteiro_vermelho_minuto.png::CompressedTexture2D::8375365063192004096::17771567
 Quadrado.png::CompressedTexture2D::5632894818853559284::1777242965::1777246454::1::::<><><>0<>0<>ff7ed6997ec04c53054e795f7c9112e8<>res://.godot/imported/Quadrado.png-3de1014cd1f092a26c02fcc6476d0ffb.ctex::
 Saco_cinco.png::CompressedTexture2D::6656639238163459942::1776812556::1776812894::1::::<><><>0<>0<>04c729898eedd2ff5c07501a3dea799e<>res://.godot/imported/Saco_cinco.png-f811e785a163af375f01bf63781a64f0.ctex::
 Saco_dezena.png::CompressedTexture2D::4486824050671882757::1776812550::1776812894::1::::<><><>0<>0<>fd9ccbeb2431a895523e6d0e564f985c<>res://.godot/imported/Saco_dezena.png-e2eb0ba955cc1ffc0eeba59b7c234ef9.ctex::
+Semi_circulo.png::CompressedTexture2D::7681268998766551712::1777384393::1777385123::1::::<><><>0<>0<>bef02920195a2d569b560cc11fecd163<>res://.godot/imported/Semi_circulo.png-4ac0aee3cb2ac60042519b761fbc82b5.ctex::
+Trapezio.png::CompressedTexture2D::8810209077590277815::1777383729::1777384220::1::::<><><>0<>0<>380ac306f56b0523a5a1e7ae2100e0f5<>res://.godot/imported/Trapezio.png-2f3cc84c1b103655b39cf54ff36fb97c.ctex::
 Triangulo.png::CompressedTexture2D::7861771712587405548::1777242968::1777246454::1::::<><><>0<>0<>3648caa6960b3a3ba0574a070c8358ad<>res://.godot/imported/Triangulo.png-43bb17b730df312d7d954fdca05eaa56.ctex::
 Urso_algodao.png::CompressedTexture2D::5575873530240583194::1776818073::1776818433::1::::<><><>0<>0<>27e61a9e47c349141be6c509e27f2f0e<>res://.godot/imported/Urso_algodao.png-9587b618db27d82f0cd8ebc02cabcbb7.ctex::
 ::res://assets/Tangram/::1777221549
@@ -99,10 +110,10 @@ Vela.png::CompressedTexture2D::3351333153888064398::1777219650::1777221549::1:::
 Violao.png::CompressedTexture2D::7587542233844945771::1777220720::1777221549::1::::<><><>0<>0<>0e199d9aabe35f8416c5cd1101a8fa7b<>res://.godot/imported/Violao.png-4a54c5ad4fdc09371c9f0a3dc0c05750.ctex::
 Xicara.png::CompressedTexture2D::3706580536971762659::1777219817::1777221549::1::::<><><>0<>0<>3c87bc93263cce53d8715d8e2bc0d9d5<>res://.godot/imported/Xicara.png-e026ef9e05ea192f313d8f944bd8cb59.ctex::
 ::res://assets/Tangram/shadows/::1777217217
-::res://scenes/::1777246454
+::res://scenes/::1777379645
 Algodao.tscn::PackedScene::-1::1776854874::0::1::::<><><>0<>0<><>::res://scripts/AlgodaoManager.gd<>res://assets/fundo_algodao.png<>res://Jogo 3.mp3<>res://assets/confete.png<>res://assets/estrela_vazia.png
 AlgodaoItem.tscn::PackedScene::-1::1776915205::0::1::::<><><>0<>0<><>::res://shaders/remove_white.gdshader
-Baloes.tscn::PackedScene::-1::1777281839::0::1::::<><><>0<>0<><>::res://scripts/BaloesManager.gd<>res://assets/fundo_baloes.png<>res://jogo 6.mp3
+Baloes.tscn::PackedScene::-1::1777382893::0::1::::<><><>0<>0<><>::res://scripts/BaloesManager.gd<>res://assets/fundo_baloes.png<>res://jogo 6.mp3
 BaloonCard.tscn::PackedScene::-1::1777246559::0::1::::<><><>0<>0<><>::res://scripts/BaloonCard.gd<>res://assets/Bexiga.png
 Carrossel.tscn::PackedScene::2391435458925240093::1777208924::0::1::::<><><>0<>0<><>::uid://b7n0y0pbeyt4t::::res://assets/fundo_carrossel.png<>uid://bar5xs7nlpiq0::::res://Jogo 6.mp3<>uid://dlx1oklqpkxuh::::res://scripts/CarrosselManager.gd
 Cup.tscn::PackedScene::-1::1776662042::0::1::::<><><>0<>0<><>::res://scripts/Cup.gd<>res://assets/Copinho_amarelo.png
@@ -112,25 +123,25 @@ Main.tscn::PackedScene::6447647273783729436::1776697948::0::1::::<><><>0<>0<><>:
 Montanha.tscn::PackedScene::7932131115602557205::1777168103::0::1::::<><><>0<>0<><>::uid://cax4jptiebukf::::res://scripts/MontanhaManager.gd<>uid://cjaq0u6131oif::::res://assets/Fundo_montanha.png<>uid://dpnu1xvmrtyn4::::res://Jogo 8.mp3
 Pipoca.tscn::PackedScene::-1::1776813510::0::1::::<><><>0<>0<><>::
 PopcornItem.tscn::PackedScene::-1::1776812723::0::1::::<><><>0<>0<><>::
-Roda.tscn::PackedScene::4787474533587215214::1777167562::0::1::::<><><>0<>0<><>::uid://cdtcjd1cb44xh::::res://assets/fundo_roda.png<>uid://c4qtsef7gdya0::::res://scripts/RodaManager.gd<>uid://54px10hnpjt8::::res://Jogo 5.mp3
+Roda.tscn::PackedScene::4787474533587215214::1777379645::0::1::::<><><>0<>0<><>::uid://cdtcjd1cb44xh::::res://assets/fundo_roda.png<>uid://c4qtsef7gdya0::::res://scripts/RodaManager.gd<>uid://54px10hnpjt8::::res://Jogo 5.mp3<>uid://btdoevbnalcai::::res://assets/Ponteiro_amarelo_hora.png<>uid://drldblaj0c17y::::res://assets/Ponteiro_vermelho_minuto.png
 SnapPoint.tscn::PackedScene::-1::1776650355::0::1::::<><><>0<>0<><>::res://scripts/SnapPoint.gd
 Tangram.tscn::PackedScene::8227657349697946116::1777222672::0::1::::<><><>0<>0<><>::uid://bos6me75l05f2::::res://assets/Fundo_tangram.png<>uid://r6ompv6odf3p::::res://jogo 9.mp3<>uid://b7c52yql2idd7::::res://scripts/TangramManager.gd
-TitleScreen.tscn::PackedScene::-1::1776726017::0::1::::<><><>0<>0<><>::
+TitleScreen.tscn::PackedScene::-1::1777387282::0::1::::<><><>0<>0<><>::
 ::res://scripts/::1777246454
 AlgodaoManager.gd::GDScript::7915447358180901835::1776944103::0::1::::<>Node2D<><>0<>0<><>::
-BaloesManager.gd::GDScript::6985714473331415976::1777378196::0::1::::<>Node2D<><>0<>0<><>::
-BaloonCard.gd::GDScript::2554070604148327381::1777287832::0::1::::<>Node2D<><>0<>0<><>::
+BaloesManager.gd::GDScript::6985714473331415976::1777386592::0::1::::<>Node2D<><>0<>0<><>::
+BaloonCard.gd::GDScript::2554070604148327381::1777386847::0::1::::<>Node2D<><>0<>0<><>::
 CarrosselManager.gd::GDScript::7980424205341413003::1777209221::0::1::::<>Node2D<><>0<>0<><>::
 Cup.gd::GDScript::2535417742506728606::1776695882::0::1::::Cup<>Area2D<><>0<>0<><>::
 LevelManager.gd::GDScript::4067327274293201088::1776950983::0::1::::LevelManager<>Node<><>0<>0<><>::
 MagicaManager.gd::GDScript::3929873577583431228::1777168768::0::1::::<>Node2D<><>0<>0<><>::
-MapScreen.gd::GDScript::903616392752355884::1777243275::0::1::::<>Control<><>0<>0<><>::
+MapScreen.gd::GDScript::903616392752355884::1777382726::0::1::::<>Control<><>0<>0<><>::
 MontanhaManager.gd::GDScript::4822099738235376049::1777209248::0::1::::<>Node2D<><>0<>0<><>::
 PopcornItem.gd::GDScript::4600971349031444588::1776809239::0::1::::<>Node2D<><>0<>0<><>::
 PopcornManager.gd::GDScript::2008890678475438953::1776950894::0::1::::<>Node2D<><>0<>0<><>::
-RodaManager.gd::GDScript::6842533863386468529::1777378182::0::1::::<>Node2D<><>0<>0<><>::
+RodaManager.gd::GDScript::6842533863386468529::1777380462::0::1::::<>Node2D<><>0<>0<><>::
 SnapPoint.gd::GDScript::198380598126919930::1776651687::0::1::::SnapPoint<>Area2D<><>0<>0<><>::
 TangramManager.gd::GDScript::4638463447650145890::1777222872::0::1::::<>Node2D<><>0<>0<><>::
-TitleScreen.gd::GDScript::764739698146356432::1776684876::0::1::::<>Control<><>0<>0<><>::
+TitleScreen.gd::GDScript::764739698146356432::1777387183::0::1::::<>Control<><>0<>0<><>::
 ::res://shaders/::1776812891
 remove_white.gdshader::Shader::1390775777158958825::1776812446::0::1::::<><><>0<>0<><>::

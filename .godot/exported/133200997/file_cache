@@ -1,6 +1,6 @@
 res://scenes/Algodao.tscn::357068c702bd6b2646de407deaa6b38f::1776854874::res://.godot/exported/133200997/export-243b94f8dbeb3f98f7681a4d5dcb184c-Algodao.scn
 res://scenes/AlgodaoItem.tscn::575e8817e32fed74af45e457d8a37b11::1776915205::res://.godot/exported/133200997/export-b92dae7b85a170f1f68c27f1592a822b-AlgodaoItem.scn
-res://scenes/Baloes.tscn::272b90bdb53b582395e5d82b2d3aad44::1777281839::res://.godot/exported/133200997/export-f623a965435e605286a07db152871d2a-Baloes.scn
+res://scenes/Baloes.tscn::769678ac878442dcc1f9c82facccb1db::1777382893::res://.godot/exported/133200997/export-f623a965435e605286a07db152871d2a-Baloes.scn
 res://scenes/BaloonCard.tscn::9d16043a5c03f7be4b055783a66c70d2::1777246559::res://.godot/exported/133200997/export-b88d768e9ebadd3f96113db46eba6af5-BaloonCard.scn
 res://scenes/Carrossel.tscn::81b655ba4ae6541245baa23286f12483::1777208924::res://.godot/exported/133200997/export-ac94af8070f641e146897ceaafb142f0-Carrossel.scn
 res://scenes/Cup.tscn::7a7ca13717df7b9601f262b67bd38de5::1776662042::res://.godot/exported/133200997/export-787af5b04d002832df0631e86448f3ec-Cup.scn
@@ -10,8 +10,8 @@ res://scenes/Main.tscn::8591021974a89822d2c12989a03313ef::1776697948::res://.god
 res://scenes/Montanha.tscn::c711d4fc588edc673f36c9578b5fbf11::1777168103::res://.godot/exported/133200997/export-7b2116a18ce1b08aa9a67c8d585d6bdb-Montanha.scn
 res://scenes/Pipoca.tscn::3150b1fad69d4702f4c49147f7ba752c::1776813510::res://.godot/exported/133200997/export-f3e06797bc6fb5ab5e1ba42675a12e66-Pipoca.scn
 res://scenes/PopcornItem.tscn::904441410053d03916bf1228efbd8710::1776812723::res://.godot/exported/133200997/export-3d7cf116534f0c206649d2776d2c823b-PopcornItem.scn
-res://scenes/Roda.tscn::4edb6cabfc87f16743f31e617bffe08d::1777167562::res://.godot/exported/133200997/export-10ac9a2bad72ffeb187bba95cdaedab0-Roda.scn
+res://scenes/Roda.tscn::06faac9d4ef60493635cec6410130045::1777379645::res://.godot/exported/133200997/export-10ac9a2bad72ffeb187bba95cdaedab0-Roda.scn
 res://scenes/SnapPoint.tscn::92914be41ca75f6884a7239f3af97944::1776650355::res://.godot/exported/133200997/export-f23467c611753606a9e7f9f99db49b58-SnapPoint.scn
 res://scenes/Tangram.tscn::614749a929e18d8222f2d4f5851acd16::1777222672::res://.godot/exported/133200997/export-6e5354f5b448a2f30002af795fd59149-Tangram.scn
-res://scenes/TitleScreen.tscn::761a289767667d34127f5c65a4e1c922::1776726017::res://.godot/exported/133200997/export-6fe91e769d056a639faff0a4dc2cf1e1-TitleScreen.scn
-res://node_2d.tscn::bdf1fe074628d36d79873234d2ddc65c::1777246455::res://.godot/exported/133200997/export-362256a061aa8890e9a1e558b11e5ec3-node_2d.scn
+res://scenes/TitleScreen.tscn::c669518e78daf5363bdf1ccca48ed262::1777387770::res://.godot/exported/133200997/export-6fe91e769d056a639faff0a4dc2cf1e1-TitleScreen.scn
+res://node_2d.tscn::85c5e0d4aa6eaef1f7dd36fe01a6c130::1777386960::res://.godot/exported/133200997/export-362256a061aa8890e9a1e558b11e5ec3-node_2d.scn

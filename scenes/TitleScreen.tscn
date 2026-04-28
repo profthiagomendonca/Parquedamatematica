@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cxab35i107wru"]
 
 [ext_resource type="Script" path="res://scripts/TitleScreen.gd" id="1_ts1"]
+[ext_resource type="Texture2D" uid="uid://cax256877v76w" path="res://assets/magico.png" id="2_magico"]
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -20,6 +21,24 @@ grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 1
 stretch_mode = 6
+
+[node name="Magico" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -480.0
+offset_top = -320.0
+offset_right = -200.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("2_magico")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -41,7 +60,7 @@ theme_override_colors/font_shadow_color = Color(0.3, 0.15, 0.1, 0.8)
 theme_override_constants/outline_size = 20
 theme_override_constants/shadow_offset_y = 6
 theme_override_constants/shadow_outline_size = 10
-theme_override_font_sizes/font_size = 110
+theme_override_font_sizes/font_size = 95
 text = "PARQUE DA
 MATEMÁTICA"
 horizontal_alignment = 1

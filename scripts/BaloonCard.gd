@@ -9,17 +9,22 @@ signal clicked(card)
 var shape_id = ""
 var is_open = false
 var is_matched = false
+var initial_y = 0.0
 
 func _ready():
 	# Cria a colisão dinamicamente baseado na textura
 	if balloon_base.texture:
 		var collision = CollisionShape2D.new()
 		var shape = CircleShape2D.new()
-		shape.radius = balloon_base.texture.get_width() / 2.5
+		shape.radius = balloon_base.texture.get_width() / 2.0
 		collision.shape = shape
 		area.add_child(collision)
 	
+	# Apenas conecta o clique
 	area.input_event.connect(_on_input_event)
+
+func update_anchor():
+	initial_y = position.y
 	_start_float_animation()
 
 func _start_float_animation():
@@ -27,16 +32,29 @@ func _start_float_animation():
 	var offset = randf_range(10, 20)
 	var duration = randf_range(1.5, 2.5)
 	
-	tween.tween_property(self, "position:y", position.y - offset, duration).set_trans(Tween.TRANS_SINE)
-	tween.tween_property(self, "position:y", position.y, duration).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(self, "position:y", initial_y - offset, duration).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(self, "position:y", initial_y, duration).set_trans(Tween.TRANS_SINE)
 
 func setup(id, texture):
 	shape_id = id
 	shape_sprite.texture = texture
-	# Ajusta a cor do balão aleatoriamente para ficar festivo
-	balloon_base.modulate = Color(randf(), randf(), randf(), 1.0)
+	
+	# Paleta de Cores "Neon Candy" para destacar do fundo
+	var vibrant_colors = [
+		Color(1, 0.1, 0.1), # Vermelho Vivo
+		Color(0.1, 0.9, 0.1), # Verde Lima
+		Color(0.1, 0.6, 1),   # Azul Piscina
+		Color(1, 1, 0.1),     # Amarelo Sol
+		Color(1, 0.1, 1),     # Magenta Vibrante
+		Color(0.1, 1, 1),     # Ciano
+		Color(1, 0.5, 0),     # Laranja
+		Color(0.7, 0.3, 1),   # Roxo
+		Color(0.5, 1, 0)      # Verde Ácido
+	]
+	
+	balloon_base.modulate = vibrant_colors.pick_random()
 
-func reveal():
+func reveal_shape():
 	if is_open or is_matched: return
 	is_open = true
 	

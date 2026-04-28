@@ -11,12 +11,21 @@ Um mundo interativo e lúdico desenvolvido para ensinar matemática para crianç
 
 Neste projeto, as crianças exploram o parque e interagem com diferentes atrações ("Pins"), cada uma focada em uma habilidade matemática específica:
 
-### 🧩 Atrações Principais:
-*   **Roda Gigante (Pin 5):** Um relógio gigante onde as crianças aprendem a ler horas e minutos de forma dinâmica.
-*   **Desafio Tangram (Pin 9):** Um jogo de quebra-cabeça com mais de 40 níveis para desenvolver a percepção espacial e geométrica.
-*   **Geometria dos Balões (Pin 6):** Jogo da memória onde balões flutuantes escondem formas geométricas (Círculo, Quadrado, Estrela, etc).
-*   **Barracas de Arraial (Pipoca e Algodão Doce):** Exercícios focados em contagem, separação de grupos e lógica numérica.
-*   **Tenda de Mágica:** Atividades lúdicas envolvendo números mágicos e sequências lógicas.
+### 🎈 As Atrações (Minijogos)
+
+1.  **Roda Gigante (Horas e Minutos):** Leia o relógio para fazer a roda girar! Sistema de precisão calibrado e sorteio aleatório de desafios.
+2.  **Geometria dos Balões (Jogo da Memória):**
+    *   **6 Níveis de Progressão:** De 4 a 14 pares simultâneos.
+    *   **Coleção Gigante:** 14 polígonos únicos (Círculo até Decágono).
+    *   **Cores Neon:** Contraste dinâmico para acessibilidade visual.
+    *   **Animação Shuffle:** Efeito de união no centro para memorização visual inicial.
+3.  **Tenda Mágica e Outros:** (Próximos passos e expansões).
+
+### 🛠️ Tecnologias e Polimento
+- **Motor:** Godot 4 (GDScript).
+- **UX:** Pins do mapa otimizados para toque (96px).
+- **Som:** Equalização profissional para entrada suave.
+- **Arte:** Estilo *Candy Gloss* com personagem Mágico interativo.
 
 ---
 
