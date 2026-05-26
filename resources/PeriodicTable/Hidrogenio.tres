@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ElementResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ElementResource.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+name = "Hidrogênio"
+symbol = "H"
+atomic_number = 1
+family = "Não-metais"
+color = Color(0.7, 1, 0.7, 1)
+description = "O elemento mais abundante no universo. Altamente inflamável e essencial para a água."

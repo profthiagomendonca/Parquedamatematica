@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/BaloesManager.gd" id="1_script"]
 [ext_resource type="Texture2D" path="res://assets/fundo_baloes.png" id="2_fundo"]
-[ext_resource type="AudioStream" path="res://jogo 6.mp3" id="3_musica"]
+[ext_resource type="AudioStream" path="res://Jogo 7.mp3" id="3_musica"]
 
 [node name="Baloes" type="Node2D"]
 script = ExtResource("1_script")

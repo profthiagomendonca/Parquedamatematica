@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6b1yp3k0bqd3"
-path="res://.godot/imported/Balão.png-7a7054ee5e7ae8f65f07538043000153.ctex"
+uid="uid://cx0sb4rt06101"
+path="res://.godot/imported/Balao.png-bd37bce6732f924d5780eb5a323c8118.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tangram/Balão.png"
-dest_files=["res://.godot/imported/Balão.png-7a7054ee5e7ae8f65f07538043000153.ctex"]
+source_file="res://assets/Tangram/Balao.png"
+dest_files=["res://.godot/imported/Balao.png-bd37bce6732f924d5780eb5a323c8118.ctex"]
 
 [params]
 

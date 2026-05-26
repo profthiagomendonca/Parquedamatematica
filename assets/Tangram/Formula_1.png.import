@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs0s6jxfwugfw"
-path="res://.godot/imported/Formula 1.png-77e71f6522e6ec584f95653ee164d558.ctex"
+uid="uid://dksm8exme8k4o"
+path="res://.godot/imported/Formula_1.png-42875d8ef9561904e18209d9d943bb79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tangram/Formula 1.png"
-dest_files=["res://.godot/imported/Formula 1.png-77e71f6522e6ec584f95653ee164d558.ctex"]
+source_file="res://assets/Tangram/Formula_1.png"
+dest_files=["res://.godot/imported/Formula_1.png-42875d8ef9561904e18209d9d943bb79.ctex"]
 
 [params]
 

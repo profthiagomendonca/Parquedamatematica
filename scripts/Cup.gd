@@ -140,4 +140,6 @@ func set_random_color() -> void:
 		var tex = cup_colors[randi() % cup_colors.size()]
 		$Sprite2D.texture = tex
 
-
+func _exit_tree() -> void:
+	if is_dragging:
+		Cup.global_drag_active = false

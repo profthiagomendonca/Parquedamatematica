@@ -23,49 +23,49 @@ var vidas = 3
 
 # BANCO DE DADOS FINAL (43 Níveis ativos)
 var animals_db = {
-	0: {"name": "Águia", "file": "res://assets/tangram/Aguia.png"},
-	1: {"name": "Alce", "file": "res://assets/tangram/Alce.png"},
-	2: {"name": "Árvore", "file": "res://assets/tangram/Arvore.png"},
-	3: {"name": "Avião", "file": "res://assets/tangram/Aviao.png"},
-	4: {"name": "Bailarina", "file": "res://assets/tangram/Bailarina.png"},
-	5: {"name": "Balão", "file": "res://assets/tangram/Balão.png"},
-	6: {"name": "Barco", "file": "res://assets/tangram/Barco.png"},
-	7: {"name": "Borboleta", "file": "res://assets/tangram/Borboleta.png"},
-	8: {"name": "Bota", "file": "res://assets/tangram/Bota.png"},
-	9: {"name": "Cachorro", "file": "res://assets/tangram/Cachorro.png"},
-	10: {"name": "Camelo", "file": "res://assets/tangram/Camelo.png"},
-	11: {"name": "Canguru", "file": "res://assets/tangram/Canguru.png"},
-	12: {"name": "Caracol", "file": "res://assets/tangram/Caracol.png"},
-	13: {"name": "Casa", "file": "res://assets/tangram/Casa.png"},
-	14: {"name": "Cavalo", "file": "res://assets/tangram/Cavalo.png"},
-	15: {"name": "Chapéu", "file": "res://assets/tangram/Chapeu.png"},
-	16: {"name": "Chave", "file": "res://assets/tangram/Chave.png"},
-	17: {"name": "Cisne", "file": "res://assets/tangram/Cisne.png"},
-	18: {"name": "Coelho", "file": "res://assets/tangram/Coelho.png"},
-	19: {"name": "Coração", "file": "res://assets/tangram/Coracao.png"},
-	20: {"name": "Coruja", "file": "res://assets/tangram/Coruja.png"},
-	21: {"name": "Elefante", "file": "res://assets/tangram/Elefante.png"},
-	22: {"name": "Estrela", "file": "res://assets/tangram/Estrela.png"},
-	23: {"name": "Foguete", "file": "res://assets/tangram/Foguete.png"},
-	24: {"name": "Fórmula 1", "file": "res://assets/tangram/Formula 1.png"},
-	25: {"name": "Gato", "file": "res://assets/tangram/Gato.png"},
-	26: {"name": "Girafa", "file": "res://assets/tangram/Girafa.png"},
-	27: {"name": "Guarda-chuva", "file": "res://assets/tangram/Guarda_chuva.png"},
-	28: {"name": "Helicóptero", "file": "res://assets/tangram/Helicoptero.png"},
-	29: {"name": "Atleta", "file": "res://assets/tangram/Homem_correndo.png"},
-	30: {"name": "Leão", "file": "res://assets/tangram/Leao.png"},
-	31: {"name": "Lua", "file": "res://assets/tangram/Lua.png"},
-	32: {"name": "Martelo", "file": "res://assets/tangram/Martelo.png"},
-	33: {"name": "Pato", "file": "res://assets/tangram/Pato.png"},
-	34: {"name": "Peixe", "file": "res://assets/tangram/Peixe.png"},
-	35: {"name": "T-Rex", "file": "res://assets/tangram/Rex.png"},
-	36: {"name": "Sorvete", "file": "res://assets/tangram/Sorvete.png"},
-	37: {"name": "Tartaruga", "file": "res://assets/tangram/Tartaruga.png"},
-	38: {"name": "Trator", "file": "res://assets/tangram/Trator.png"},
-	39: {"name": "Tubarão", "file": "res://assets/tangram/Tubarao.png"},
-	40: {"name": "Vela", "file": "res://assets/tangram/Vela.png"},
-	41: {"name": "Violão", "file": "res://assets/tangram/Violao.png"},
-	42: {"name": "Xícara", "file": "res://assets/tangram/Xicara.png"}
+	0: {"name": "Águia", "file": "res://assets/Tangram/Aguia.png"},
+	1: {"name": "Alce", "file": "res://assets/Tangram/Alce.png"},
+	2: {"name": "Árvore", "file": "res://assets/Tangram/Arvore.png"},
+	3: {"name": "Avião", "file": "res://assets/Tangram/Aviao.png"},
+	4: {"name": "Bailarina", "file": "res://assets/Tangram/Bailarina.png"},
+	5: {"name": "Balão", "file": "res://assets/Tangram/Balao.png"},
+	6: {"name": "Barco", "file": "res://assets/Tangram/Barco.png"},
+	7: {"name": "Borboleta", "file": "res://assets/Tangram/Borboleta.png"},
+	8: {"name": "Bota", "file": "res://assets/Tangram/Bota.png"},
+	9: {"name": "Cachorro", "file": "res://assets/Tangram/Cachorro.png"},
+	10: {"name": "Camelo", "file": "res://assets/Tangram/Camelo.png"},
+	11: {"name": "Canguru", "file": "res://assets/Tangram/Canguru.png"},
+	12: {"name": "Caracol", "file": "res://assets/Tangram/Caracol.png"},
+	13: {"name": "Casa", "file": "res://assets/Tangram/Casa.png"},
+	14: {"name": "Cavalo", "file": "res://assets/Tangram/Cavalo.png"},
+	15: {"name": "Chapéu", "file": "res://assets/Tangram/Chapeu.png"},
+	16: {"name": "Chave", "file": "res://assets/Tangram/Chave.png"},
+	17: {"name": "Cisne", "file": "res://assets/Tangram/Cisne.png"},
+	18: {"name": "Coelho", "file": "res://assets/Tangram/Coelho.png"},
+	19: {"name": "Coração", "file": "res://assets/Tangram/Coracao.png"},
+	20: {"name": "Coruja", "file": "res://assets/Tangram/Coruja.png"},
+	21: {"name": "Elefante", "file": "res://assets/Tangram/Elefante.png"},
+	22: {"name": "Estrela", "file": "res://assets/Tangram/Estrela.png"},
+	23: {"name": "Foguete", "file": "res://assets/Tangram/Foguete.png"},
+	24: {"name": "Fórmula 1", "file": "res://assets/Tangram/Formula_1.png"},
+	25: {"name": "Gato", "file": "res://assets/Tangram/Gato.png"},
+	26: {"name": "Girafa", "file": "res://assets/Tangram/Girafa.png"},
+	27: {"name": "Guarda-chuva", "file": "res://assets/Tangram/Guarda_chuva.png"},
+	28: {"name": "Helicóptero", "file": "res://assets/Tangram/Helicoptero.png"},
+	29: {"name": "Atleta", "file": "res://assets/Tangram/Homem_correndo.png"},
+	30: {"name": "Leão", "file": "res://assets/Tangram/Leao.png"},
+	31: {"name": "Lua", "file": "res://assets/Tangram/Lua.png"},
+	32: {"name": "Martelo", "file": "res://assets/Tangram/Martelo.png"},
+	33: {"name": "Pato", "file": "res://assets/Tangram/Pato.png"},
+	34: {"name": "Peixe", "file": "res://assets/Tangram/Peixe.png"},
+	35: {"name": "T-Rex", "file": "res://assets/Tangram/Rex.png"},
+	36: {"name": "Sorvete", "file": "res://assets/Tangram/Sorvete.png"},
+	37: {"name": "Tartaruga", "file": "res://assets/Tangram/Tartaruga.png"},
+	38: {"name": "Trator", "file": "res://assets/Tangram/Trator.png"},
+	39: {"name": "Tubarão", "file": "res://assets/Tangram/Tubarao.png"},
+	40: {"name": "Vela", "file": "res://assets/Tangram/Vela.png"},
+	41: {"name": "Violão", "file": "res://assets/Tangram/Violao.png"},
+	42: {"name": "Xícara", "file": "res://assets/Tangram/Xicara.png"}
 }
 
 func _ready():
@@ -95,10 +95,6 @@ func setup_level():
 	
 	instruction_label.text = "Qual imagem completa a sombra?"
 	
-	if not FileAccess.file_exists(animals_db[level].file):
-		level = (level + 1) % animals_db.size()
-		return
-
 	var current_animal_data = animals_db[level]
 	var silhouette = _create_animal_object(current_animal_data, true)
 	if silhouette:
@@ -107,10 +103,7 @@ func setup_level():
 		silhouette.scale = Vector2(1.5, 1.5)
 		add_child(silhouette)
 	
-	var available_options = []
-	for k in animals_db.keys():
-		if FileAccess.file_exists(animals_db[k].file):
-			available_options.append(k)
+	var available_options = animals_db.keys()
 	
 	var option_indices = [level]
 	while option_indices.size() < min(3, available_options.size()):

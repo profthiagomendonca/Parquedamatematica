@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ElementResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ElementResource.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+name = "Hélio"
+symbol = "He"
+atomic_number = 2
+family = "Gases Nobres"
+color = Color(0.7, 0.7, 1, 1)
+description = "Gás incolor e inodoro. Usado em balões de festa e tecnologia de resfriamento."

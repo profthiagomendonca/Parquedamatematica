@@ -1,7 +1,1 @@
-res://scenes/Roda.tscn
-res://scripts/BaloesManager.gd
-res://scripts/RodaManager.gd
-res://scripts/BaloonCard.gd
-res://scripts/MapScreen.gd
-res://scripts/TitleScreen.gd
-res://scripts/LevelManager.gd
+res://scripts/TangramManager.gd

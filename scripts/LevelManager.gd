@@ -178,6 +178,7 @@ func check_win_condition() -> void:
 				c.celebrate()
 		
 		await get_tree().create_timer(2.2).timeout
+		if not is_inside_tree(): return
 		
 		if streak >= max_streak:
 			# GRANDE CELEBRAÇÃO!
@@ -189,6 +190,7 @@ func check_win_condition() -> void:
 			som_acerto.play()
 			
 			await get_tree().create_timer(4.0).timeout
+			if not is_inside_tree(): return
 			streak = 0 # Reinicia o ciclo
 		
 		reset_level()
@@ -200,6 +202,7 @@ func reset_level() -> void:
 			c.reset_cup()
 			
 	await get_tree().create_timer(1.0).timeout
+	if not is_inside_tree(): return
 	start_new_level()
 
 func _on_back_pressed() -> void:
